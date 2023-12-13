@@ -3,7 +3,7 @@
 # Function to check if a string is a valid home directory pattern
 # The function does not check if the directory actually exists
 # It only tests the correctness of the pattern.
-checkHomeDirectory(){
+checkHomeDirectoryPath(){
 
     # Define the regular expression pattern
     # Check if the input string matches the pattern
@@ -19,7 +19,7 @@ checkHomeDirectory(){
 # Example Usage
 # Functon Call
 # Passing the variable $input to the first argument of the function $1
-input="/home/user01"
+input="/home/user_01"
 checkHomeDirectory "$input"
 
 # Invalid because the username starts with a number.
