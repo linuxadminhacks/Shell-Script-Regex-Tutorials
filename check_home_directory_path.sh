@@ -8,7 +8,7 @@ checkHomeDirectory(){
     # Define the regular expression pattern
     # Check if the input string matches the pattern
     # $1 is the first argument of the function
-    pattern="^(/home/[a-zA-Z][a-zA-Z0-9_]*)|(~/[a-zA-Z][a-zA-Z0-9_]*)$"
+    pattern="^/home/[a-zA-Z][a-zA-Z0-9_]*$"
     if [[ $1 =~ $pattern ]]; then
        echo "Valid home directory pattern."
     else
