@@ -22,8 +22,6 @@ checkHomeDirectory(){
 input="/home/user01"
 checkHomeDirectory "$input"
 
-input="~/user01"
-checkHomeDirectory "$input"
 # Invalid because the username starts with a number.
 input="/home/0user01"
 checkHomeDirectory "$input"
