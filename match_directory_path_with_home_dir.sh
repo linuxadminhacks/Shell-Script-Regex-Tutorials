@@ -15,7 +15,7 @@ current_home=$HOME
 input_path=$1
 
 # Define the regex pattern
-pattern="^\/(?:[^\/]+\/?)*$"
+pattern="^/[^/]*((/[^/])*)?$"
 
 # Check if the input path matches the regex pattern
 if [[ $input_path =~ $pattern ]]; then  # if-1
